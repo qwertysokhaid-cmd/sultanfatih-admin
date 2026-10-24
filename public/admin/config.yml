@@ -11,7 +11,7 @@ backend:
     uploadMedia: 'Admin: unggah "{{path}}"'
     deleteMedia: 'Admin: hapus file "{{path}}"'
 
-site_url: https://sultanfatihpage.com
+site_url: https://sultanfatihtravelpage.com
 logo_url: /images/logo/logo-horizontal.png
 media_folder: public/images/uploads
 public_folder: /images/uploads
