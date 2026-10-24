@@ -1,0 +1,49 @@
+{
+  "itinerary": [],
+  "name": "Beautiful New Korea 6D (Winter Season)",
+  "category": "Ziarah & Wisata Halal",
+  "summary": "Wisata halal 6 hari ke Korea Selatan: Nami Island, Mt. Sorak, dan Seoul. Itinerary: Jakarta – Incheon; Incheon – Nami Island – Mt. Sorak – Seoul; Seoul City Tour – Seoul – Jakarta.",
+  "departureDate": "2027-01-10",
+  "durationDays": 6,
+  "airline": "Korean Air",
+  "price": 14600000,
+  "highlights": [
+    "Winter season",
+    "Limited seat"
+  ],
+  "hotels": [
+    {
+      "city": "Korea",
+      "name": "Hotel bintang 3 (twin/triple) / setaraf",
+      "stars": 3
+    }
+  ],
+  "includes": [
+    "Tiket internasional Jakarta – Incheon",
+    "Bagasi sesuai ketentuan airlines",
+    "Akomodasi hotel bintang 3 setaraf (twin/triple)",
+    "Breakfast",
+    "Transportasi bus pariwisata & tiket masuk objek wisata",
+    "Acara tour & makanan sesuai program",
+    "Mineral water 1 botol per hari",
+    "Tour leader",
+    "Travel kits (luggage tag)",
+    "Travel insurance (sampai usia 82 tahun)"
+  ],
+  "excludes": [
+    "Biaya administrasi visa group Korea Rp300.000",
+    "Lunch dan dinner",
+    "Travel insurance Rp64.100 (wajib)",
+    "Tipping tour leader, local guide, driver Rp690.000",
+    "Tips porter hotel, minibar, laundry, telepon",
+    "Kelebihan bagasi, dll",
+    "PPN 1,1%"
+  ],
+  "paymentTerms": "Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/wisata-halal-korea.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/korea-winter-10-jan-2027-1.jpg"
+  ]
+}

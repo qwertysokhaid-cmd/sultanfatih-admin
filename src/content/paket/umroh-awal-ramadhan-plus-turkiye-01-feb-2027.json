@@ -1,0 +1,74 @@
+{
+  "itinerary": [],
+  "name": "Umroh Awal Ramadhan Plus Turkiye",
+  "category": "Umroh Plus",
+  "summary": "Umroh 12 hari bersama Emirates: Turkiye dulu, lalu Ramadhan di Makkah. Winter season.",
+  "departureDate": "2027-02-01",
+  "durationDays": 12,
+  "airline": "Emirates",
+  "price": 37900000,
+  "highlights": [
+    "Ramadhan di Makkah",
+    "Turkiye dulu baru umroh",
+    "Diskon khusus alumni",
+    "Manasik 2 kali",
+    "Free Ayam Albaik",
+    "Zam-zam 5 liter",
+    "Buku panduan doa umroh",
+    "Reuni kajian bulanan"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Andalus Palace 3 / setaraf",
+      "stars": 3,
+      "distance": "±10 menit ke Masjid Nabawi"
+    },
+    {
+      "city": "Makkah",
+      "name": "Maysan Al Maqam / setaraf",
+      "stars": 4,
+      "distance": "±7 menit ke Masjidil Haram"
+    },
+    {
+      "city": "Istanbul",
+      "name": "Nova Prime Plaza / setaraf"
+    },
+    {
+      "city": "Bursa",
+      "name": "Gold Majesty / setaraf"
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel sekamar 2/3 orang di Turki",
+    "Hotel sekamar 4/5 orang di Saudi",
+    "Perlengkapan full",
+    "Manasik online & offline",
+    "Visa dan asuransi",
+    "Pembimbing dan tour leader, guide lokal Turki",
+    "Handling",
+    "Makan 3x sehari di Turki",
+    "Makan 2x sehari di Saudi (sahur dan buka puasa)"
+  ],
+  "excludes": [
+    "Tiket domestik",
+    "Paspor, vaksin meningitis & polio",
+    "Kelebihan bagasi",
+    "Biaya kirim perlengkapan dan surat-surat",
+    "Keperluan pribadi, upgrade paket, biaya kursi roda, sakit, dll",
+    "Tipping guide & driver USD 7/pax/hari (paket Plus Turki)",
+    "Biaya faktor force majeure",
+    "Optional tour (berbayar): Hot Air Balloon, Safari Jeep, Telefric Uludag, Mt. Erciyes",
+    "Batas bagasi: 1 x 23 kg bagasi + 7 kg tas kabin pesawat",
+    "Harga paket dengan kurs USD maksimal Rp17.700"
+  ],
+  "paymentTerms": "Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/umroh-plus-turki-istanbul.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-awal-ramadhan-plus-turkiye-01-feb-2027-1.jpg",
+    "/images/brosur/umroh-awal-ramadhan-plus-turkiye-01-feb-2027-2.jpg"
+  ]
+}

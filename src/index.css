@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #7e1cba;
+  --color-deep: #4b0356;
+  --color-lavender: #f4eafb;
+  --color-bg: #faf9fc;
+  --color-ink: #25212b;
+  --color-muted: #706a78;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-bg text-ink font-sans antialiased; }
+  h1, h2, h3, h4 { @apply font-serif font-semibold text-deep; }
+  :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+}
+
+@utility container-x { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+@utility btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition-colors disabled:pointer-events-none disabled:opacity-40; }
+@utility btn-primary { @apply btn bg-primary text-white hover:bg-deep; }
+@utility btn-outline { @apply btn border border-primary text-primary hover:bg-lavender; }
+@utility btn-light { @apply btn bg-white text-deep hover:bg-lavender; }
+@utility btn-ghost-light { @apply btn border border-white/60 text-white hover:bg-white/10; }
+@utility card { @apply rounded-xl bg-white shadow-[0_2px_16px_rgba(75,3,86,0.07)]; }
+@utility eyebrow { @apply text-xs font-semibold uppercase tracking-[0.18em] text-primary; }
+
+/* Subtle eight-point star pattern for areas without a photo */
+.bg-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.09'%3E%3Crect x='17' y='17' width='30' height='30'/%3E%3Crect x='17' y='17' width='30' height='30' transform='rotate(45 32 32)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Airline logo marquee: the list is rendered twice, so sliding by -50% loops seamlessly. */
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee-track { animation: marquee 32s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee { mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent); }
+
+/* ---------- Hero (scroll-driven; --p goes 0 → 1 while the hero is pinned) ---------- */
+.hero-frame {
+  /* full-bleed → inset rounded card */
+  inset: calc(var(--p) * 2.2rem) calc(var(--p) * 1.25rem);
+  border-radius: calc(var(--p) * 2rem);
+  box-shadow: 0 30px 80px rgba(75, 3, 86, calc(var(--p) * 0.35));
+}
+.hero-media { transform: scale(calc(1.18 - var(--p) * 0.18)); transform-origin: center; }
+.hero-copy {
+  opacity: clamp(0, calc(1 - var(--p) * 2.4), 1);
+  transform: translateY(calc(var(--p) * -6rem));
+}
+.hero-tagline { opacity: clamp(0, calc((var(--p) - 0.35) * 3.5), 1); }
+.hero-tag-word {
+  display: inline-block;
+  opacity: clamp(0, calc((var(--p) - 0.38 - var(--i) * 0.08) * 6), 1);
+  transform: translateY(calc(clamp(0, calc(1 - (var(--p) - 0.38 - var(--i) * 0.08) * 6), 1) * 2.5rem));
+  filter: blur(calc(clamp(0, calc(1 - (var(--p) - 0.38 - var(--i) * 0.08) * 6), 1) * 8px));
+}
+.hero-cue { opacity: clamp(0, calc(1 - var(--p) * 6), 1); }
+.hero-dim { opacity: calc(var(--p) * 0.55); }
+
+@keyframes hero-rise { from { transform: translateY(110%); } }
+@keyframes hero-fade { from { opacity: 0; transform: translateY(1rem); } }
+@keyframes hero-line { from { transform: scaleX(0); } }
+@keyframes hero-cue { from { transform: translateY(-100%); } to { transform: translateY(350%); } }
+.hero-word { animation: hero-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-fade { animation: hero-fade 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-line { transform-origin: left; animation: hero-line 1s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-cue-dot { animation: hero-cue 1.8s ease-in-out infinite; }

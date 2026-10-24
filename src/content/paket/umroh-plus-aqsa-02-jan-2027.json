@@ -1,0 +1,66 @@
+{
+  "itinerary": [],
+  "name": "Umroh Plus Aqsa",
+  "category": "Umroh Plus",
+  "summary": "Umroh 13 hari ramah lansia dengan rute Jordan – Aqsa – Madinah – Makkah (2–14 Januari 2027).",
+  "departureDate": "2027-01-02",
+  "durationDays": 13,
+  "airline": "Qatar Airways",
+  "price": 59900000,
+  "roomOptions": [
+    {
+      "type": "Quad / Quint",
+      "price": 59900000
+    }
+  ],
+  "highlights": [
+    "DP mulai Rp15 juta",
+    "Ramah lansia"
+  ],
+  "hotels": [
+    {
+      "city": "Amman (2 malam)",
+      "name": "Nishan Hotel / setaraf"
+    },
+    {
+      "city": "Yerusalem (3 malam)",
+      "name": "New Capitol / setaraf"
+    },
+    {
+      "city": "Madinah (3 malam)",
+      "name": "Andalus Salam / setaraf"
+    },
+    {
+      "city": "Makkah (3 malam)",
+      "name": "Grand Al Massa / setaraf"
+    }
+  ],
+  "includes": [
+    "Tiket PP dari Jakarta",
+    "Visa",
+    "Akomodasi",
+    "Bus AC selama program",
+    "Konsumsi",
+    "Asuransi",
+    "Tour leader & muthowif",
+    "Tax",
+    "Tour sesuai program",
+    "Manasik umroh"
+  ],
+  "excludes": [
+    "Pengeluaran pribadi",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat, baik dari Indonesia, negara tujuan, maupun transit",
+    "Perlengkapan",
+    "Tipping local guide & driver (USD 70)",
+    "Harga paket dengan kurs USD maksimal Rp18.000"
+  ],
+  "paymentTerms": "DP mulai Rp15 juta. Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665. Persetujuan atau penolakan visa mutlak wewenang negara yang dituju. Program terselenggara selama kondisi dan situasi memungkinkan.",
+  "images": [
+    "/images/galeri/umroh-plus-aqsha-petra.jpg",
+    "/images/galeri/rombongan-dome-of-the-rock.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-plus-aqsa-02-jan-2027-1.jpg"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "itinerary": [],
+  "name": "Umroh Plus Turkiye Libur Sekolah (Winter Season)",
+  "category": "Umroh Plus",
+  "summary": "Libur sekolah akhir tahun: 11 hari, umroh dulu baru Turkiye.",
+  "departureDate": "2026-12-27",
+  "durationDays": 11,
+  "airline": "Saudia Airlines",
+  "price": 38900000,
+  "highlights": [
+    "Umroh dulu baru Turkiye",
+    "Winter season"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Jauharat Al Rasheed / setaraf"
+    },
+    {
+      "city": "Makkah",
+      "name": "Maysan Al Maqam / setaraf"
+    },
+    {
+      "city": "Istanbul",
+      "name": "Nova Prime Plaza / setaraf"
+    },
+    {
+      "city": "Bursa",
+      "name": "Gold Majesty / setaraf"
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel sekamar 2/3 orang di Turki",
+    "Hotel sekamar 4/5 orang di Saudi",
+    "Perlengkapan full",
+    "Manasik online & offline",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader, guide lokal Turki",
+    "Handling"
+  ],
+  "excludes": [
+    "Tiket domestik",
+    "Paspor, vaksin meningitis & polio",
+    "Kelebihan bagasi",
+    "Biaya kirim perlengkapan dan surat-surat",
+    "Keperluan pribadi, upgrade paket, biaya kursi roda, sakit, dll",
+    "Tipping guide & driver Rp400.000 (paket Plus Turki)",
+    "Biaya faktor force majeure",
+    "Optional tour (berbayar): Hot Air Balloon, Safari Jeep, Telefric Uludag, Mt. Erciyes",
+    "Batas bagasi: 1 x 23 kg bagasi + 7 kg tas kabin pesawat"
+  ],
+  "paymentTerms": "Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/umroh-plus-turki-istanbul.jpg",
+    "/images/galeri/jamaah-umroh-turki.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-plus-turkiye-27-des-2026-1.jpg"
+  ]
+}

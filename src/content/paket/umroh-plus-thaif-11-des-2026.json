@@ -1,0 +1,53 @@
+{
+  "itinerary": [],
+  "name": "Umroh Plus Thaif",
+  "category": "Umroh",
+  "summary": "Umroh 9 hari plus Thaif bersama Garuda Indonesia.",
+  "departureDate": "2026-12-11",
+  "durationDays": 9,
+  "airline": "Garuda Indonesia",
+  "price": 33900000,
+  "highlights": [
+    "Plus Thaif",
+    "DP mulai Rp5 juta"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Andalus Palace 3 / setaraf",
+      "stars": 3
+    },
+    {
+      "city": "Makkah",
+      "name": "Ramada Dar Al Fayzeen / setaraf",
+      "stars": 4
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel dan akomodasi sekamar 4/5 orang",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader",
+    "Manasik online & offline",
+    "Handling",
+    "Perlengkapan full"
+  ],
+  "excludes": [
+    "Keperluan pribadi",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat atau negara tujuan dan transit",
+    "Kelebihan bagasi",
+    "Paspor, suntik meningitis dan polio",
+    "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
+    "Harga paket dengan kurs USD maksimal Rp17.100"
+  ],
+  "paymentTerms": "DP mulai Rp5 juta. Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/rombongan-jamaah-wanita.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-plus-thaif-11-des-2026-1.jpg",
+    "/images/brosur/umroh-plus-thaif-11-des-2026-2.jpg"
+  ]
+}

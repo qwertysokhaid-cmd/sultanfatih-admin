@@ -1,0 +1,60 @@
+{
+  "itinerary": [],
+  "name": "Umroh Reguler Super Promo",
+  "category": "Umroh",
+  "summary": "Umroh 9 hari harga promo bersama Qatar Airways, hotel dekat Masjid Nabawi dan Masjidil Haram.",
+  "departureDate": "2026-11-25",
+  "durationDays": 9,
+  "airline": "Qatar Airways",
+  "price": 27900000,
+  "highlights": [
+    "Diskon khusus alumni",
+    "Manasik 2 kali",
+    "Free Ayam Albaik",
+    "Zam-zam 5 liter",
+    "Buku panduan doa umroh",
+    "Reuni kajian bulanan"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Andalus Salam / setaraf",
+      "stars": 3,
+      "distance": "±3 menit ke Masjid Nabawi"
+    },
+    {
+      "city": "Makkah",
+      "name": "Nawarat Sham 3 / setaraf",
+      "stars": 3,
+      "distance": "±10 menit ke Masjidil Haram"
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel dan akomodasi sekamar 4/5 orang",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader",
+    "Manasik online & offline",
+    "Handling",
+    "Kain batik, syal, jilbab, dan buku doa"
+  ],
+  "excludes": [
+    "Keperluan pribadi",
+    "Koper dan perlengkapan",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat atau negara tujuan dan transit",
+    "Kelebihan bagasi",
+    "Paspor, suntik meningitis dan polio",
+    "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
+    "Harga paket dengan kurs USD maksimal Rp17.700"
+  ],
+  "paymentTerms": "Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/jamaah-umroh-super-promo.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-super-promo-25-nov-2026-1.jpg",
+    "/images/brosur/umroh-super-promo-25-nov-2026-2.jpg"
+  ]
+}

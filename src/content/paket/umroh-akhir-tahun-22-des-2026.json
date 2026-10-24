@@ -1,0 +1,77 @@
+{
+  "itinerary": [],
+  "name": "Umroh Akhir Tahun Liburan Sekolah",
+  "category": "Umroh",
+  "summary": "Umroh 9 hari saat libur sekolah akhir tahun bersama Garuda Indonesia, landing Madinah, free kereta cepat. Pilihan hotel bintang 3 atau bintang 5.",
+  "departureDate": "2026-12-22",
+  "durationDays": 9,
+  "airline": "Garuda Indonesia (landing Madinah)",
+  "price": 39900000,
+  "roomOptions": [
+    {
+      "type": "Bintang 3 (quad)",
+      "price": 39900000
+    },
+    {
+      "type": "Bintang 5 (quad)",
+      "price": 49900000
+    }
+  ],
+  "highlights": [
+    "Free kereta cepat",
+    "Landing Madinah",
+    "Diskon khusus alumni",
+    "Manasik 2 kali",
+    "Free Ayam Albaik",
+    "Zam-zam 5 liter",
+    "Buku panduan doa umroh",
+    "Reuni kajian bulanan"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah (Bintang 3)",
+      "name": "Kayan Internasional / setaraf",
+      "stars": 3
+    },
+    {
+      "city": "Makkah (Bintang 3)",
+      "name": "Grand Al Massa / setaraf"
+    },
+    {
+      "city": "Madinah (Bintang 5)",
+      "name": "Al Haram Hotel / setaraf",
+      "stars": 5
+    },
+    {
+      "city": "Makkah (Bintang 5)",
+      "name": "Swissotel / setaraf",
+      "stars": 5
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel dan akomodasi sekamar 4/5 orang",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader",
+    "Handling",
+    "Perlengkapan full"
+  ],
+  "excludes": [
+    "Keperluan pribadi",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat atau negara tujuan dan transit",
+    "Kelebihan bagasi",
+    "Paspor, suntik meningitis dan polio",
+    "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
+    "Harga paket dengan kurs USD maksimal Rp17.700"
+  ],
+  "paymentTerms": "Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/rombongan-jamaah-ziarah.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-akhir-tahun-22-des-2026-1.jpg",
+    "/images/brosur/umroh-akhir-tahun-22-des-2026-2.jpg"
+  ]
+}

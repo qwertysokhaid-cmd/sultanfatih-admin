@@ -1,0 +1,66 @@
+{
+  "itinerary": [],
+  "name": "Umroh Plus Cappadocia (Winter Season)",
+  "category": "Umroh Plus",
+  "summary": "Libur akhir tahun 2026: 14 hari, Turkiye dulu baru umroh. Rute Jeddah – Istanbul – Bursa – Cappadocia – Madinah – Makkah.",
+  "departureDate": "2026-12-26",
+  "durationDays": 14,
+  "airline": "Saudia Airlines",
+  "price": 43900000,
+  "highlights": [
+    "Turkiye dulu baru umroh",
+    "Winter season"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Mirage Al Salam / setaraf"
+    },
+    {
+      "city": "Makkah",
+      "name": "Grand Al Massa / setaraf"
+    },
+    {
+      "city": "Istanbul",
+      "name": "Radisson / setaraf"
+    },
+    {
+      "city": "Bursa",
+      "name": "Anatolia / setaraf"
+    },
+    {
+      "city": "Cappadocia",
+      "name": "Mihran Sultan / setaraf"
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel sekamar 2/3 orang di Turki",
+    "Hotel sekamar 4/5 orang di Saudi",
+    "Perlengkapan full",
+    "Manasik online & offline",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader, guide lokal Turki",
+    "Handling"
+  ],
+  "excludes": [
+    "Tiket domestik",
+    "Paspor, vaksin meningitis & polio",
+    "Kelebihan bagasi",
+    "Biaya kirim perlengkapan dan surat-surat",
+    "Keperluan pribadi, upgrade paket, biaya kursi roda, sakit, dll",
+    "Tipping guide & driver USD 7/pax/hari",
+    "Biaya faktor force majeure",
+    "Optional tour (berbayar): Hot Air Balloon, Safari Jeep, Telefric Uludag, Mt. Erciyes",
+    "Batas bagasi: 1 x 23 kg bagasi + 7 kg tas kabin pesawat"
+  ],
+  "paymentTerms": "Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/umroh-syawal-plus-cappadocia.jpg",
+    "/images/galeri/tur-cappadocia.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-plus-cappadocia-26-des-2026-1.jpg"
+  ]
+}

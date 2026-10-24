@@ -1,0 +1,58 @@
+{
+  "itinerary": [],
+  "name": "Umroh Plus Thaif",
+  "category": "Umroh",
+  "summary": "Umroh 9 hari plus Thaif bersama Oman Air, umroh dulu baru Madinah. Dapatkan uang saku 100 SAR per jamaah.",
+  "departureDate": "2027-01-09",
+  "durationDays": 9,
+  "airline": "Oman Air",
+  "price": 29900000,
+  "highlights": [
+    "Uang saku 100 SAR/jamaah",
+    "Plus Thaif",
+    "DP mulai Rp5 juta",
+    "Manasik 2 kali",
+    "Free Ayam Albaik",
+    "Zam-zam 5 liter",
+    "Buku panduan doa umroh",
+    "Reuni kajian bulanan"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Kayan International / setaraf",
+      "stars": 3
+    },
+    {
+      "city": "Makkah",
+      "name": "Grand Al Massa / setaraf",
+      "stars": 4
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel dan akomodasi sekamar 4/5 orang",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader",
+    "Handling",
+    "Perlengkapan full"
+  ],
+  "excludes": [
+    "Keperluan pribadi",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat atau negara tujuan dan transit",
+    "Kelebihan bagasi",
+    "Paspor, suntik meningitis dan polio",
+    "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
+    "Harga paket dengan kurs USD maksimal Rp17.700"
+  ],
+  "paymentTerms": "DP mulai Rp5 juta. Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/jamaah-masjid-quba.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-plus-thaif-09-jan-2027-1.jpg",
+    "/images/brosur/umroh-plus-thaif-09-jan-2027-2.jpg"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "itinerary": [],
+  "name": "Umroh Smart + City Tour Thaif",
+  "category": "Umroh",
+  "summary": "Umroh 9 hari ramah lansia dengan tambahan city tour Thaif. Super promo.",
+  "departureDate": "2026-10-29",
+  "durationDays": 9,
+  "airline": "Saudia Airlines",
+  "price": 28900000,
+  "highlights": [
+    "City tour Thaif",
+    "Ramah lansia",
+    "Manasik 2 kali",
+    "Free Ayam Albaik",
+    "Zam-zam 5 liter",
+    "Buku panduan doa umroh",
+    "Reuni kajian bulanan"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Andalus Palace 3 / setaraf",
+      "stars": 3
+    },
+    {
+      "city": "Makkah",
+      "name": "Waha Ajyad / setaraf",
+      "stars": 3
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel dan akomodasi sekamar 4/5 orang",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader",
+    "Handling",
+    "Syal, kain batik, dan buku doa"
+  ],
+  "excludes": [
+    "Keperluan pribadi",
+    "Koper dan perlengkapan",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat atau negara tujuan dan transit",
+    "Kelebihan bagasi",
+    "Paspor, suntik meningitis dan polio",
+    "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
+    "Harga paket dengan kurs USD maksimal Rp17.700"
+  ],
+  "paymentTerms": "Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/jamaah-pelataran-kabah-malam.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-smart-plus-thaif-29-okt-2026-1.jpg"
+  ]
+}

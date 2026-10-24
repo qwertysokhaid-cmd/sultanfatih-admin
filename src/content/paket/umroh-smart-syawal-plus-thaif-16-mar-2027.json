@@ -1,0 +1,58 @@
+{
+  "itinerary": [],
+  "name": "Umroh Smart Syawal + City Tour Thaif",
+  "category": "Umroh",
+  "summary": "Umroh 9 hari di bulan Syawal dengan city tour Thaif bersama Oman Air.",
+  "departureDate": "2027-03-16",
+  "durationDays": 9,
+  "airline": "Oman Air",
+  "price": 29900000,
+  "highlights": [
+    "City tour Thaif",
+    "Diskon khusus alumni",
+    "Manasik 2 kali",
+    "Free Ayam Albaik",
+    "Zam-zam 5 liter",
+    "Buku panduan doa umroh",
+    "Reuni kajian bulanan"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Andalus Salam / setaraf",
+      "stars": 3
+    },
+    {
+      "city": "Makkah",
+      "name": "Maysan Al Maqam / setaraf",
+      "stars": 3
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel dan akomodasi sekamar 4/5 orang",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader",
+    "Handling",
+    "Perlengkapan standar"
+  ],
+  "excludes": [
+    "Keperluan pribadi",
+    "Koper kabin",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat atau negara tujuan dan transit",
+    "Kelebihan bagasi",
+    "Paspor, suntik meningitis dan polio",
+    "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
+    "Harga paket dengan kurs USD maksimal Rp17.700"
+  ],
+  "paymentTerms": "Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/jamaah-wanita-dalam-masjid.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-smart-syawal-plus-thaif-16-mar-2027-1.jpg",
+    "/images/brosur/umroh-smart-syawal-plus-thaif-16-mar-2027-2.jpg"
+  ]
+}

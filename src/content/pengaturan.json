@@ -1,0 +1,24 @@
+{
+  "whatsapp": "6282134506616",
+  "phone": "021-89084190",
+  "email": "sultanfatih.travel@gmail.com",
+  "address": "Ruko Cibubur City Blok B No. 7, Nagrak, Kec. Gunung Putri, Bogor, Jawa Barat 16967",
+  "mapsUrl": "",
+  "serviceHours": "Senin–Jumat 09.00–17.00 WIB · Sabtu 10.00–15.00 WIB",
+  "social": {
+    "instagram": "https://www.instagram.com/sultanfatihtravel",
+    "facebook": "",
+    "youtube": "",
+    "tiktok": ""
+  },
+  "bankAccounts": [
+    {
+      "bank": "BSI",
+      "number": "8170065390"
+    },
+    {
+      "bank": "BCA",
+      "number": "7115417665"
+    }
+  ]
+}

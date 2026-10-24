@@ -1,0 +1,238 @@
+# Panel admin Sultan Fatih (Sveltia CMS). Setiap "Simpan" membuat commit di GitHub,
+# lalu hosting membangun ulang website secara otomatis (±1–2 menit).
+backend:
+  name: github
+  repo: qwertysokhaid-cmd/sultanfatih-admin
+  branch: main
+  commit_messages:
+    create: 'Admin: tambah {{collection}} "{{slug}}"'
+    update: 'Admin: ubah {{collection}} "{{slug}}"'
+    delete: 'Admin: hapus {{collection}} "{{slug}}"'
+    uploadMedia: 'Admin: unggah "{{path}}"'
+    deleteMedia: 'Admin: hapus file "{{path}}"'
+
+site_url: https://www.sultanfatihtravel.com
+logo_url: /images/logo/logo-horizontal.png
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  # ---------------------------------------------------------------- PAKET
+  - name: paket
+    label: Paket Umroh & Wisata
+    label_singular: Paket
+    description: >-
+      Setiap paket tampil otomatis di website, diurutkan dari harga termurah.
+      Paket yang tanggal berangkatnya sudah lewat otomatis disembunyikan, tidak perlu dihapus.
+    folder: src/content/paket
+    extension: json
+    format: json
+    create: true
+    delete: true
+    identifier_field: name
+    slug: "{{name}}-{{fields.departureDate}}"
+    summary: "{{name}} · {{departureDate}} · Rp {{price}}"
+    sortable_fields: [departureDate, price, name]
+    fields:
+      - { name: name, label: Nama paket, widget: string, hint: "Contoh: Umroh Plus Thaif" }
+      - name: category
+        label: Kategori
+        widget: select
+        options: [Umroh, Umroh Plus, Ziarah & Wisata Halal, Haji]
+        default: Umroh
+      - { name: summary, label: Ringkasan singkat, widget: text, hint: "1–2 kalimat yang tampil di bawah judul paket." }
+      - { name: departureDate, label: Tanggal keberangkatan, widget: datetime, time_format: false, format: YYYY-MM-DD, required: false }
+      - { name: durationDays, label: Lama perjalanan (hari), widget: number, value_type: int, min: 1, required: false }
+      - name: price
+        label: Harga mulai (Rp)
+        widget: number
+        value_type: int
+        min: 0
+        required: false
+        hint: "Tulis angka saja tanpa titik. Contoh: 29900000. Kosongkan jika harga lewat konsultasi."
+      - { name: airline, label: Maskapai, widget: string, required: false, hint: "Contoh: Saudia Airlines" }
+      - { name: departureCity, label: Kota keberangkatan, widget: string, required: false }
+      - name: roomOptions
+        label: Pilihan kamar & harga
+        label_singular: pilihan kamar
+        widget: list
+        required: false
+        summary: "{{fields.type}} · Rp {{fields.price}}"
+        fields:
+          - { name: type, label: Tipe kamar, widget: string, hint: "Contoh: Quad, Sekamar 6 orang, Gold" }
+          - { name: price, label: Harga (Rp), widget: number, value_type: int, required: false }
+      - name: highlights
+        label: Keunggulan & bonus
+        label_singular: keunggulan
+        widget: list
+        required: false
+        hint: Dua yang pertama tampil di kartu paket.
+        field: { name: item, label: Keunggulan, widget: string }
+      - name: images
+        label: Foto paket
+        label_singular: foto
+        widget: list
+        required: false
+        hint: Foto pertama dipakai sebagai sampul kartu paket.
+        field: { name: image, label: Foto, widget: image }
+      - name: brochures
+        label: Brosur
+        label_singular: brosur
+        widget: list
+        required: false
+        field: { name: image, label: Gambar brosur, widget: image }
+      - name: hotels
+        label: Hotel
+        label_singular: hotel
+        widget: list
+        required: false
+        summary: "{{fields.city}}: {{fields.name}}"
+        fields:
+          - { name: city, label: Kota, widget: string, hint: "Contoh: Madinah" }
+          - { name: name, label: Nama hotel, widget: string, hint: "Contoh: Andalus Salam / setaraf" }
+          - { name: stars, label: Bintang, widget: number, value_type: int, min: 1, max: 5, required: false }
+          - { name: distance, label: Jarak ke masjid, widget: string, required: false, hint: "Contoh: ±5 menit ke Masjid Nabawi" }
+      - name: includes
+        label: Harga termasuk
+        label_singular: item
+        widget: list
+        required: false
+        field: { name: item, label: Item, widget: string }
+      - name: excludes
+        label: Harga tidak termasuk
+        label_singular: item
+        widget: list
+        required: false
+        field: { name: item, label: Item, widget: string }
+      - name: itinerary
+        label: Jadwal harian (itinerary)
+        label_singular: hari
+        widget: list
+        required: false
+        summary: "Hari {{fields.day}}: {{fields.title}}"
+        fields:
+          - { name: day, label: Hari ke-, widget: number, value_type: int, min: 1 }
+          - { name: title, label: Judul, widget: string }
+          - { name: description, label: Keterangan, widget: text }
+      - { name: paymentTerms, label: Ketentuan pembayaran, widget: text, required: false }
+      - { name: cancellationTerms, label: Ketentuan pembatalan, widget: text, required: false }
+      - name: documents
+        label: Dokumen persyaratan
+        label_singular: dokumen
+        widget: list
+        required: false
+        hint: Kosongkan untuk memakai daftar dokumen standar.
+        field: { name: item, label: Dokumen, widget: string }
+      - name: faqs
+        label: Tanya jawab paket
+        label_singular: pertanyaan
+        widget: list
+        required: false
+        hint: Kosongkan untuk memakai tanya jawab standar.
+        summary: "{{fields.q}}"
+        fields:
+          - { name: q, label: Pertanyaan, widget: string }
+          - { name: a, label: Jawaban, widget: text }
+
+  # ---------------------------------------------------------------- ARTIKEL
+  - name: artikel
+    label: Artikel
+    label_singular: Artikel
+    description: Tiga artikel terbaru (berdasarkan tanggal) tampil di beranda.
+    folder: src/content/artikel
+    extension: json
+    format: json
+    create: true
+    delete: true
+    identifier_field: title
+    slug: "{{title}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Judul, widget: string }
+      - name: category
+        label: Kategori
+        widget: select
+        options: [Panduan Ibadah, Persiapan Perjalanan, Kesehatan Jemaah, Tips dan Edukasi]
+      - { name: date, label: Tanggal terbit / diperbarui, widget: datetime, time_format: false, format: YYYY-MM-DD }
+      - { name: thumbnail, label: Foto sampul, widget: image, required: false }
+      - { name: excerpt, label: Ringkasan, widget: text, hint: "1–2 kalimat yang tampil di daftar artikel." }
+      - { name: draft, label: Simpan sebagai draft (belum tampil di website), widget: boolean, default: false, required: false }
+      - name: body
+        label: Isi artikel
+        widget: markdown
+        buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list]
+        editor_components: []
+        hint: Gunakan tombol judul (H2/H3) untuk subjudul dan tombol daftar untuk poin-poin.
+      - name: references
+        label: Referensi / sumber
+        label_singular: sumber
+        widget: list
+        required: false
+        field: { name: item, label: Sumber, widget: string }
+
+  # ---------------------------------------------------------------- LAINNYA
+  - name: lainnya
+    label: Testimoni, FAQ & Kontak
+    files:
+      - name: testimoni
+        label: Testimoni Jamaah
+        file: src/content/testimoni.json
+        format: json
+        fields:
+          - name: testimoni
+            label: Daftar testimoni
+            label_singular: testimoni
+            widget: list
+            summary: "{{fields.name}}"
+            hint: Isi hanya dengan ulasan asli. Urutan di sini = urutan di website.
+            fields:
+              - { name: name, label: Nama, widget: string }
+              - { name: text, label: Isi ulasan, widget: text }
+              - { name: rating, label: Bintang (1–5), widget: number, value_type: int, min: 1, max: 5, required: false }
+              - { name: localGuide, label: Local Guide Google, widget: boolean, default: false, required: false }
+              - { name: photo, label: Foto (opsional), widget: image, required: false }
+      - name: faq
+        label: Pertanyaan Umum (FAQ)
+        file: src/content/faq.json
+        format: json
+        fields:
+          - name: faq
+            label: Daftar pertanyaan
+            label_singular: pertanyaan
+            widget: list
+            summary: "{{fields.q}}"
+            fields:
+              - { name: q, label: Pertanyaan, widget: string }
+              - { name: a, label: Jawaban, widget: text }
+      - name: pengaturan
+        label: Kontak, Jam Operasional & Rekening
+        file: src/content/pengaturan.json
+        format: json
+        fields:
+          - name: whatsapp
+            label: Nomor WhatsApp
+            widget: string
+            hint: "Diawali 62, tanpa tanda + dan tanpa 0 di depan. Contoh: 6282134506616"
+            pattern: ['^62\d{8,13}$', "Nomor harus diawali 62 dan hanya berisi angka."]
+          - { name: phone, label: Telepon kantor, widget: string, required: false }
+          - { name: email, label: Email, widget: string, required: false }
+          - { name: address, label: Alamat kantor, widget: text, required: false }
+          - { name: mapsUrl, label: Link Google Maps, widget: string, required: false }
+          - { name: serviceHours, label: Jam operasional, widget: string, required: false, hint: "Contoh: Senin–Jumat 09.00–17.00 WIB · Sabtu 10.00–15.00 WIB" }
+          - name: social
+            label: Media sosial (link lengkap)
+            widget: object
+            fields:
+              - { name: instagram, label: Instagram, widget: string, required: false }
+              - { name: facebook, label: Facebook, widget: string, required: false }
+              - { name: youtube, label: YouTube, widget: string, required: false }
+              - { name: tiktok, label: TikTok, widget: string, required: false }
+          - name: bankAccounts
+            label: Rekening resmi
+            label_singular: rekening
+            widget: list
+            summary: "{{fields.bank}} {{fields.number}}"
+            fields:
+              - { name: bank, label: Bank, widget: string }
+              - { name: number, label: Nomor rekening, widget: string }

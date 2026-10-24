@@ -1,0 +1,74 @@
+{
+  "itinerary": [],
+  "name": "Umroh Reguler Silver & Gold",
+  "category": "Umroh",
+  "summary": "Umroh reguler 9 hari dengan dua pilihan hotel: Silver (bintang 3–4) atau Gold (bintang 5, pelataran Masjidil Haram). Bisa request kereta cepat.",
+  "departureDate": "2026-11-18",
+  "durationDays": 9,
+  "airline": "Saudia Airlines",
+  "price": 33900000,
+  "roomOptions": [
+    {
+      "type": "Silver",
+      "price": 33900000
+    },
+    {
+      "type": "Gold",
+      "price": 42900000
+    }
+  ],
+  "highlights": [
+    "DP mulai Rp5 juta",
+    "Bisa request kereta cepat"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah (Silver)",
+      "name": "Artal Munawarah / setaraf",
+      "stars": 3
+    },
+    {
+      "city": "Makkah (Silver)",
+      "name": "Al Massa Dar Faizeen / setaraf",
+      "stars": 4
+    },
+    {
+      "city": "Madinah (Gold)",
+      "name": "Rove Al Madinah / setaraf",
+      "stars": 5
+    },
+    {
+      "city": "Makkah (Gold)",
+      "name": "Shofwa 3 / setaraf",
+      "stars": 5,
+      "distance": "Pelataran Masjidil Haram"
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel dan akomodasi sekamar 4/5 orang",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader",
+    "Manasik online & offline",
+    "Handling",
+    "Perlengkapan full"
+  ],
+  "excludes": [
+    "Keperluan pribadi",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat atau negara tujuan dan transit",
+    "Kelebihan bagasi",
+    "Paspor, suntik meningitis dan polio",
+    "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
+    "Harga paket dengan kurs USD maksimal Rp17.100"
+  ],
+  "paymentTerms": "DP mulai Rp5 juta. Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/jamaah-ihram-pembimbing.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-reguler-18-nov-2026-1.jpg",
+    "/images/brosur/umroh-reguler-18-nov-2026-2.jpg"
+  ]
+}

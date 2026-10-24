@@ -1,0 +1,63 @@
+{
+  "itinerary": [],
+  "name": "Ziarah Aqsa: Aqsa – Jordan – Mesir",
+  "category": "Ziarah & Wisata Halal",
+  "summary": "Perjalanan ziarah 8 hari ke Masjid Al-Aqsa, Yordania, dan Mesir (17–24 November 2026).",
+  "departureDate": "2026-11-17",
+  "durationDays": 8,
+  "airline": "Oman Air",
+  "price": 43500000,
+  "roomOptions": [
+    {
+      "type": "Double / Triple",
+      "price": 43500000
+    }
+  ],
+  "highlights": [
+    "DP mulai Rp15 juta"
+  ],
+  "hotels": [
+    {
+      "city": "Amman (2 malam)",
+      "name": "Nishan Hotel / setaraf"
+    },
+    {
+      "city": "Yerusalem (2 malam)",
+      "name": "New Capitol / setaraf"
+    },
+    {
+      "city": "Ras Sidr (1 malam)",
+      "name": "Ras Sidr Hotel / setaraf"
+    },
+    {
+      "city": "Kairo (2 malam)",
+      "name": "Pyramids Front / setaraf"
+    }
+  ],
+  "includes": [
+    "Tiket PP Jakarta",
+    "Visa",
+    "Akomodasi",
+    "Bus AC selama program",
+    "Asuransi",
+    "Tour leader",
+    "Tax",
+    "Konsumsi"
+  ],
+  "excludes": [
+    "Pengeluaran pribadi",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat, baik dari Indonesia, negara tujuan, maupun transit",
+    "Perlengkapan",
+    "Tipping local guide & driver (USD 90)",
+    "Harga paket dengan kurs USD maksimal Rp18.000"
+  ],
+  "paymentTerms": "DP mulai Rp15 juta. Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665. Persetujuan atau penolakan visa mutlak wewenang negara yang dituju. Program terselenggara selama kondisi dan situasi memungkinkan.",
+  "images": [
+    "/images/galeri/rombongan-dome-of-the-rock.jpg",
+    "/images/galeri/umroh-plus-aqsha-petra.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/ziarah-aqsa-jordan-mesir-17-nov-2026-1.jpg"
+  ]
+}

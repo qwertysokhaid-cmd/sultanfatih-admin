@@ -1,0 +1,53 @@
+{
+  "itinerary": [],
+  "name": "Umroh Reguler",
+  "category": "Umroh",
+  "summary": "Umroh reguler 9 hari bersama Saudia Airlines dengan hotel bintang 3 di Madinah dan bintang 4 di Makkah.",
+  "departureDate": "2026-11-23",
+  "durationDays": 9,
+  "airline": "Saudia Airlines",
+  "price": 32900000,
+  "highlights": [
+    "DP mulai Rp5 juta"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Jawharat Al Rasheed / setaraf",
+      "stars": 3
+    },
+    {
+      "city": "Makkah",
+      "name": "Maysan Al Maqam / setaraf",
+      "stars": 4
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Hotel dan akomodasi sekamar 4/5 orang",
+    "Visa dan asuransi",
+    "Makan 3x sehari",
+    "Pembimbing dan tour leader",
+    "Manasik online & offline",
+    "Handling",
+    "Baju batik, syal, dan buku doa"
+  ],
+  "excludes": [
+    "Keperluan pribadi",
+    "Koper dan perlengkapan",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat atau negara tujuan dan transit",
+    "Kelebihan bagasi",
+    "Paspor, suntik meningitis dan polio",
+    "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
+    "Harga paket dengan kurs USD maksimal Rp17.500"
+  ],
+  "paymentTerms": "DP mulai Rp5 juta. Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/jamaah-wanita-dalam-masjid.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-reguler-23-nov-2026-1.jpg",
+    "/images/brosur/umroh-reguler-23-nov-2026-2.jpg"
+  ]
+}

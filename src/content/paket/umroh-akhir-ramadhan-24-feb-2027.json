@@ -1,0 +1,77 @@
+{
+  "itinerary": [],
+  "name": "Umroh Akhir Ramadhan 17 Hari",
+  "category": "Umroh",
+  "summary": "Umroh 17 hari di akhir Ramadhan bersama Oman Air: Idul Fitri di Makkah, 2x Jum'at di Saudi, hotel jarak dekat.",
+  "departureDate": "2027-02-24",
+  "durationDays": 17,
+  "airline": "Oman Air",
+  "price": 38900000,
+  "roomOptions": [
+    {
+      "type": "Sekamar 8 orang",
+      "price": 38900000
+    },
+    {
+      "type": "Sekamar 6 orang",
+      "price": 41900000
+    },
+    {
+      "type": "Sekamar 4–5 orang",
+      "price": 54900000
+    }
+  ],
+  "highlights": [
+    "Idul Fitri di Makkah",
+    "2x Jum'at di Saudi",
+    "Diskon khusus alumni",
+    "Manasik 2 kali",
+    "Free Ayam Albaik",
+    "Zam-zam 5 liter",
+    "Buku panduan doa umroh",
+    "Reuni kajian bulanan"
+  ],
+  "hotels": [
+    {
+      "city": "Madinah",
+      "name": "Manazel Al Falah / setaraf",
+      "stars": 3,
+      "distance": "±5 menit ke Masjid Nabawi"
+    },
+    {
+      "city": "Makkah",
+      "name": "Rehab Al Taqwa / setaraf",
+      "stars": 3,
+      "distance": "±10 menit ke Masjidil Haram"
+    }
+  ],
+  "includes": [
+    "Pesawat internasional PP kelas ekonomi",
+    "Visa dan asuransi",
+    "Bus AC selama program",
+    "Makan di Madinah",
+    "Ied di Makkah",
+    "2x Jum'at",
+    "Tour leader dan muthowif",
+    "Kain batik, syal, jilbab, dan buku doa"
+  ],
+  "excludes": [
+    "Makan di Makkah",
+    "Keperluan pribadi",
+    "Koper dan perlengkapan",
+    "Program tambahan",
+    "Perubahan kebijakan visa, maskapai, dan pemerintah setempat atau negara tujuan dan transit",
+    "Kelebihan bagasi",
+    "Paspor, suntik meningitis dan polio",
+    "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
+    "Harga paket dengan kurs USD maksimal Rp17.700"
+  ],
+  "paymentTerms": "Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
+  "images": [
+    "/images/galeri/jamaah-matahari-terbit-makkah.jpg"
+  ],
+  "brochures": [
+    "/images/brosur/umroh-akhir-ramadhan-24-feb-2027-1.jpg",
+    "/images/brosur/umroh-akhir-ramadhan-24-feb-2027-2.jpg"
+  ]
+}
