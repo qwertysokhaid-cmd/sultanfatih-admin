@@ -41,3 +41,5 @@ jobs:
           protocol: ${{ secrets.FTP_PROTOCOL || 'ftps' }}
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_SERVER_DIR || 'public_html/' }}
+          # Hostinger's FTP host is an IP, so its TLS certificate can't match the hostname; still encrypted.
+          security: loose
