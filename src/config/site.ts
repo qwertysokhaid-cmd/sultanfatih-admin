@@ -6,7 +6,7 @@ export const site = {
   name: 'Sultan Fatih Tour & Travel',
   description:
     'Promotor umroh dan haji bimbingan sunnah serta wisata halal dunia sejak 2017. Berizin PPIU dan PIHK, dengan pembimbing ibadah dari alumni dan mahasiswa Universitas Islam Madinah.',
-  url: 'https://www.sultanfatihtravel.com',
+  url: 'https://sultanfatihpage.com',
 
   // whatsapp: format internasional tanpa tanda +, contoh '6281234567890'
   ...settings,

@@ -1,7 +1,7 @@
 # Panduan Panel Admin Sultan Fatih
 
 Panel admin dipakai untuk mengubah isi website **tanpa menyentuh kode**.
-Alamatnya: **www.sultanfatihtravel.com/admin**
+Alamatnya: **sultanfatihpage.com/admin**
 
 Setelah Anda menekan **Publish**, website diperbarui otomatis dalam **±2–3 menit**.
 
@@ -21,7 +21,7 @@ Yang **tidak** diubah dari panel (minta bantuan developer): foto/video galeri, v
 
 ## Cara masuk
 
-1. Buka **www.sultanfatihtravel.com/admin**
+1. Buka **sultanfatihpage.com/admin**
 2. Klik **Sign In Using Access Token**
 3. Tempel kode token GitHub yang diberikan developer (cukup sekali, browser akan mengingatnya)
 
@@ -87,7 +87,7 @@ GitHub Actions, otomatis membangun & mengunggah website ke hosting setiap ada pe
 
 1. Buat repository **privat** di GitHub, lalu unggah folder proyek ini (branch `main`).
 2. Di repository: **Settings → Secrets and variables → Actions → New repository secret**, isi:
-   - `FTP_SERVER` (contoh `ftp.sultanfatihtravel.com`)
+   - `FTP_SERVER` (contoh `ftp.sultanfatihpage.com`)
    - `FTP_USERNAME` dan `FTP_PASSWORD` (dari cPanel → FTP Accounts)
    - opsional `FTP_SERVER_DIR` (bawaan `public_html/`) dan `FTP_PROTOCOL` (bawaan `ftps`; isi `ftp` jika hosting tidak mendukung FTPS)
 3. Buka tab **Actions** → **Deploy ke hosting** → **Run workflow**. Unggahan pertama memakan waktu
