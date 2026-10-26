@@ -1,3 +1,4 @@
+import { pageMeta } from '../config/pages.ts'
 import { Link } from 'react-router-dom'
 import AgentMap from '../components/AgentMap.tsx'
 import Hero from '../components/Hero.tsx'
@@ -23,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <Seo title="Paket Umrah dan Konsultasi Jamaah" description={site.description} />
+      <Seo {...pageMeta['/']} />
 
       <Hero />
 

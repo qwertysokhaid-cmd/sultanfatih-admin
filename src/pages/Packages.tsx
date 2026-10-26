@@ -1,3 +1,4 @@
+import { pageMeta } from '../config/pages.ts'
 import { useMemo, useState, type ChangeEvent } from 'react'
 import { CtaBanner, PackageCard, PageHero } from '../components/blocks.tsx'
 import { Seo } from '../components/ui.tsx'
@@ -17,7 +18,7 @@ export default function Packages() {
 
   return (
     <>
-      <Seo title="Paket Umrah" description="Katalog paket Umrah Sultan Fatih Tour & Travel. Bandingkan durasi, jadwal keberangkatan, dan fasilitas, lalu konsultasikan pilihan Anda." />
+      <Seo {...pageMeta['/paket-umrah']} />
       <PageHero eyebrow="Paket Umrah" title="Paket Umroh & Wisata Halal" desc="Semua jadwal keberangkatan umroh, haji, dan wisata halal, diurutkan dari harga termurah. Harga, waktu, dan kebijakan dapat berubah sewaktu-waktu." />
 
       <section className="container-x py-14">

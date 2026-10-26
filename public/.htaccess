@@ -7,6 +7,9 @@ DirectoryIndex index.html
   RewriteEngine On
   RewriteBase /
   RewriteRule ^admin/?$ /admin/index.html [L]
+  # Halaman yang punya salinan HTML sendiri (seo/, dibuat saat build) dilayani dari sana agar title/description-nya sesuai.
+  RewriteCond %{DOCUMENT_ROOT}/seo/$1.html -f
+  RewriteRule ^(.+?)/?$ /seo/$1.html [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]

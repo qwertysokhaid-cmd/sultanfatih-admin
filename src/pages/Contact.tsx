@@ -1,3 +1,4 @@
+import { pageMeta } from '../config/pages.ts'
 import { useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/blocks.tsx'
@@ -51,7 +52,7 @@ export default function Contact() {
 
   return (
     <>
-      <Seo title="Kontak dan Konsultasi" description="Hubungi Sultan Fatih Tour & Travel untuk konsultasi paket Umrah melalui WhatsApp, email, atau kunjungi kantor kami." />
+      <Seo {...pageMeta['/kontak']} />
       <PageHero eyebrow="Kontak" title="Konsultasi Perjalanan Umrah" desc="Tim Sultan Fatih siap membantu menjawab pertanyaan Anda tentang paket, jadwal, dan persiapan." />
 
       <section className="container-x grid gap-10 py-14 lg:grid-cols-5">

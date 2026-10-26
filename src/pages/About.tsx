@@ -1,3 +1,4 @@
+import { pageMeta } from '../config/pages.ts'
 import { CtaBanner, GalleryGrid, PageHero, VideoProfile } from '../components/blocks.tsx'
 import { CheckIcon } from '../components/icons.tsx'
 import { Img, SectionHeading, Seo } from '../components/ui.tsx'
@@ -13,7 +14,7 @@ export default function About() {
 
   return (
     <>
-      <Seo title="Tentang Kami" description={`Profil ${site.name}: sejarah sejak 2017, visi dan misi, fasilitas, program haji dan umroh, legalitas PPIU dan PIHK, serta tim.`} />
+      <Seo {...pageMeta['/tentang-kami']} />
       <PageHero eyebrow="Tentang Kami" title={site.name} desc={company.summary} />
 
       <section className="container-x grid gap-12 py-20 lg:grid-cols-2">

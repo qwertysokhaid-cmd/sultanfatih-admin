@@ -9,15 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <title>Sultan Fatih Tour & Travel</title>
-    <!-- For crawlers and link previews (WhatsApp, Facebook) that don't run JS; main.tsx drops the data-static ones once <Seo> renders per-page tags. -->
+    <title data-static>Sultan Fatih Tour &amp; Travel</title>
+    <!-- For crawlers and link previews (WhatsApp, Facebook) that don't run JS; vite.config.ts rewrites the tagged ones per route at build; main.tsx drops them once <Seo> renders. -->
     <meta data-static name="description" content="Promotor umroh dan haji bimbingan sunnah serta wisata halal dunia sejak 2017. Berizin PPIU dan PIHK, dengan pembimbing ibadah dari alumni dan mahasiswa Universitas Islam Madinah." />
     <meta data-static property="og:title" content="Sultan Fatih Tour & Travel" />
     <meta data-static property="og:description" content="Promotor umroh dan haji bimbingan sunnah serta wisata halal dunia sejak 2017. Berizin PPIU dan PIHK." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Sultan Fatih Tour & Travel" />
     <meta property="og:locale" content="id_ID" />
-    <meta property="og:image" content="https://sultanfatihtravelpage.com/images/company-profile-poster.jpg" />
+    <meta data-static property="og:image" content="https://sultanfatihtravelpage.com/images/company-profile-poster.jpg" />
     <!-- Inline so the splash shows before the JS/CSS bundle arrives; React replaces #root's content on mount. -->
     <style>
       .splash { position: fixed; inset: 0; display: grid; place-items: center; background: #faf9fc; }

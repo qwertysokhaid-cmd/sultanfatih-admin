@@ -1,3 +1,4 @@
+import { pageMeta } from '../config/pages.ts'
 import { Link, useParams } from 'react-router-dom'
 import { ArticleCard, CtaBanner, PageHero } from '../components/blocks.tsx'
 import Markdown from '../components/Markdown.tsx'
@@ -10,7 +11,7 @@ export function Articles() {
   const sorted = [...articles].sort((a, b) => b.date.localeCompare(a.date))
   return (
     <>
-      <Seo title="Artikel" description="Artikel edukasi seputar persiapan, manasik, dan tips perjalanan Umrah dari Sultan Fatih Tour & Travel." />
+      <Seo {...pageMeta['/artikel']} />
       <PageHero eyebrow="Artikel" title="Artikel Edukasi Umrah" desc="Bekal pengetahuan untuk mempersiapkan perjalanan ibadah dengan lebih tenang." />
       <section className="container-x py-14">
         {sorted.length ? (

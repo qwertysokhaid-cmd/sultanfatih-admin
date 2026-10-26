@@ -1,3 +1,4 @@
+import { pageMeta } from '../config/pages.ts'
 import { CtaBanner, GalleryGrid, PageHero } from '../components/blocks.tsx'
 import { MosqueIcon } from '../components/icons.tsx'
 import { Seo } from '../components/ui.tsx'
@@ -11,7 +12,7 @@ export default function Gallery() {
 
   return (
     <>
-      <Seo title="Galeri" description="Galeri dokumentasi perjalanan dan suasana ibadah di Makkah dan Madinah bersama Sultan Fatih Tour & Travel." />
+      <Seo {...pageMeta['/galeri']} />
       <PageHero eyebrow="Galeri" title="Galeri Perjalanan" desc="Dokumentasi perjalanan dan suasana ibadah di Tanah Suci." />
       <section className="container-x py-14">
         {gallery.length === 0 ? (
