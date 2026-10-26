@@ -1,13 +1,16 @@
 import type { ReactNode } from 'react'
+import { useLocation } from 'react-router-dom'
 import { site } from '../config/site.ts'
 import { MosqueIcon, WhatsAppIcon } from './icons.tsx'
 import { DEFAULT_WA_MESSAGE, waUrl } from '../lib/whatsapp.ts'
 
 /** Per-page SEO. React 19 hoists <title>/<meta> into <head>. */
 export function Seo({ title, description }: { title: string; description: string }) {
+  const { pathname } = useLocation()
   return (
     <>
       <title>{`${title} | ${site.name}`}</title>
+      <link rel="canonical" href={site.url + pathname} />
       <meta name="description" content={description} />
       <meta property="og:title" content={`${title} | ${site.name}`} />
       <meta property="og:description" content={description} />
