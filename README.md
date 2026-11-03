@@ -13,4 +13,4 @@ npm run build    # output ke dist/
 Isi website (paket, artikel, testimoni, FAQ, kontak) diedit lewat **/admin** tanpa kode.
 Data tersimpan di `src/content/`. Panduan lengkap untuk tim: [PANDUAN-ADMIN.md](PANDUAN-ADMIN.md).
 
-Deploy: setiap push ke `main` dibangun & diunggah ke hosting cPanel lewat FTP oleh GitHub Actions (`.github/workflows/deploy.yml`). Aturan halaman Apache ada di `public/.htaccess`.
+Deploy: Cloudflare Pages membangun (`npm run build` → `dist`) setiap push ke `main`. Tiap halaman punya file HTML sendiri (`dist/<route>.html`); alamat lain jatuh ke `index.html` (React Router).

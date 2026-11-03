@@ -82,18 +82,14 @@ Menu **Testimoni, FAQ & Kontak** → **Kontak, Jam Operasional & Rekening**.
 
 ## Untuk developer: pemasangan awal (sekali saja)
 
-Website di-hosting di **hosting berbayar (cPanel)**. GitHub menyimpan isi website dan, lewat
-GitHub Actions, otomatis membangun & mengunggah website ke hosting setiap ada perubahan.
+Website di-hosting di **Cloudflare Pages** (gratis). GitHub menyimpan isi website; setiap ada perubahan
+di branch `main` (termasuk dari panel /admin), Cloudflare otomatis membangun & menayangkan website (±1–3 menit).
 
-1. Buat repository **privat** di GitHub, lalu unggah folder proyek ini (branch `main`).
-2. Di repository: **Settings → Secrets and variables → Actions → New repository secret**, isi:
-   - `FTP_SERVER` (contoh `ftp.sultanfatihtravelpage.com`)
-   - `FTP_USERNAME` dan `FTP_PASSWORD` (dari cPanel → FTP Accounts)
-   - opsional `FTP_SERVER_DIR` (bawaan `public_html/`) dan `FTP_PROTOCOL` (bawaan `ftps`; isi `ftp` jika hosting tidak mendukung FTPS)
-3. Buka tab **Actions** → **Deploy ke hosting** → **Run workflow**. Unggahan pertama memakan waktu
-   lebih lama karena video (±240 MB); berikutnya hanya file yang berubah.
+1. Buat repository di GitHub, lalu unggah folder proyek ini (branch `main`).
+2. Di Cloudflare: **Workers & Pages → Create → Pages → Connect to Git**, pilih repository ini.
+   Framework preset **None**, build command `npm run build`, output directory `dist` (versi Node diambil dari `.node-version`).
+3. Domain: **Custom domains → Set up a custom domain**. Batas Cloudflare Pages: tiap file maksimal 25 MB.
 4. Ubah baris `repo:` di `public/admin/config.yml` menjadi `username/nama-repo`.
 5. Buat token untuk tim di GitHub: **Settings → Developer settings → Fine-grained tokens**,
    pilih hanya repository ini, izin **Contents: Read and write**. Berikan token ke admin.
-6. Aturan halaman untuk Apache/LiteSpeed ada di `public/.htaccess` (ikut terunggah otomatis).
-   Isi yang bisa diedit tersimpan di `src/content/` (JSON); foto unggahan admin masuk ke `public/images/uploads/`.
+6. Isi yang bisa diedit tersimpan di `src/content/` (JSON); foto unggahan admin masuk ke `public/images/uploads/`.

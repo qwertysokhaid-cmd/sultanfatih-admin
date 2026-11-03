@@ -42,7 +42,7 @@ function headTags(r: Route) {
 }
 
 /**
- * Writes sitemap.xml and robots.txt, and one HTML file per route (dist/seo/<route>.html, served by .htaccess)
+ * Writes sitemap.xml and robots.txt, and one HTML file per route (dist/<route>.html, which Cloudflare Pages serves at /<route>)
  * whose <head> carries that page's own title, description, canonical and Open Graph.
  */
 function seoFiles(): Plugin {
@@ -61,7 +61,7 @@ function seoFiles(): Plugin {
       const template = readFileSync(`${dir}/index.html`, 'utf8').replace(/\s*<(title|meta|link) data-static[^>]*>(?:[^<]*<\/title>)?/g, '')
       if (template.includes('data-static')) throw new Error('seo-files: a data-static tag in index.html was not stripped')
       for (const r of list) {
-        const file = r.loc === '/' ? `${dir}/index.html` : `${dir}/seo${r.loc}.html`
+        const file = r.loc === '/' ? `${dir}/index.html` : `${dir}${r.loc}.html`
         mkdirSync(dirname(file), { recursive: true })
         writeFileSync(file, template.replace('</head>', `  ${headTags(r)}\n  </head>`))
       }
