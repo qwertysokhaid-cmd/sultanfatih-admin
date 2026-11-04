@@ -1,12 +1,13 @@
 {
-  "itinerary": [],
   "name": "Umroh Super Promo Plus Thaif",
   "category": "Umroh",
   "summary": "Special Promo Merah Putih: umroh 9 hari plus Thaif, penerbangan Saudia direct Jeddah.",
-  "departureDate": "2026-11-19",
+  "departureDate": "2026-11-20",
   "durationDays": 9,
+  "price": 30900000,
   "airline": "Saudia Airlines (direct Jeddah)",
-  "price": 29900000,
+  "departureCity": "",
+  "roomOptions": [],
   "highlights": [
     "Plus Thaif",
     "Direct Jeddah",
@@ -16,6 +17,13 @@
     "Zam-zam 5 liter",
     "Buku panduan doa umroh",
     "Reuni kajian bulanan"
+  ],
+  "images": [
+    "/images/galeri/jamaah-matahari-terbit-makkah.jpg"
+  ],
+  "brochures": [
+    "/images/uploads/WhatsApp Image 2026-11-04 at 11.34.03 AM.jpeg",
+    "/images/uploads/WhatsApp Image 2026-11-04 at 11.34.04 AM.jpeg"
   ],
   "hotels": [
     {
@@ -50,13 +58,9 @@
     "Biaya faktor force majeure atau kebijakan pemerintah/maskapai",
     "Harga paket dengan kurs USD maksimal Rp17.700"
   ],
+  "itinerary": [],
   "paymentTerms": "DP mulai Rp15 juta (non-refundable). Pembayaran hanya melalui rekening resmi a/n PT Sultan Fatih Global Grup: BSI 8170065390 atau BCA 7115417665.",
   "cancellationTerms": "DP bersifat non-refundable.",
-  "images": [
-    "/images/galeri/jamaah-matahari-terbit-makkah.jpg"
-  ],
-  "brochures": [
-    "/images/brosur/umroh-super-promo-plus-thaif-19-nov-2026-1.jpg",
-    "/images/brosur/umroh-super-promo-plus-thaif-19-nov-2026-2.jpg"
-  ]
+  "documents": [],
+  "faqs": []
 }
