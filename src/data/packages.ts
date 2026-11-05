@@ -1,8 +1,9 @@
 import { upcomingByPrice } from '../lib/filterPackages.ts'
+import { packageSlug } from '../lib/format.ts'
 import type { UmrahPackage } from '../types/index.ts'
 
 // Isi paket dikelola lewat panel admin (/admin) → satu file JSON per paket di src/content/paket/.
-// Nama file = alamat halaman paket. Paket yang sudah berangkat otomatis disembunyikan, urutan termurah dulu.
+// Alamat halaman = nama file, dengan tanggal di ujungnya mengikuti tanggal keberangkatan. Paket yang sudah berangkat otomatis disembunyikan, urutan termurah dulu.
 const files = import.meta.glob<Partial<UmrahPackage>>('../content/paket/*.json', { eager: true, import: 'default' })
 
 const documents = [
@@ -23,7 +24,8 @@ const nonEmpty = <T,>(v: T[] | undefined, fallback: T[]) => (v?.length ? v : fal
 
 const all: UmrahPackage[] = Object.entries(files).map(([path, p]) => ({
   ...p,
-  slug: path.split('/').pop()!.replace(/\.json$/, ''),
+  fileSlug: path.split('/').pop()!.replace(/\.json$/, ''),
+  slug: packageSlug(path.split('/').pop()!.replace(/\.json$/, ''), p.departureDate || undefined),
   name: p.name ?? 'Paket',
   summary: p.summary ?? '',
   category: p.category ?? 'Umroh',
@@ -41,5 +43,6 @@ const all: UmrahPackage[] = Object.entries(files).map(([path, p]) => ({
 }))
 
 export const packages = upcomingByPrice(all, new Date().toISOString().slice(0, 10))
-export const getPackage = (slug: string) => packages.find((p) => p.slug === slug)
+// Old links (the file name, i.e. the URL before a date change) still find the package.
+export const getPackage = (slug: string) => packages.find((p) => p.slug === slug) ?? packages.find((p) => p.fileSlug === slug)
 export const featuredPackages = packages.filter((p) => p.category === 'Umroh' || p.category === 'Umroh Plus').slice(0, 9)

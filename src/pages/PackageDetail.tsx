@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import { CtaBanner, FaqList, GalleryGrid } from '../components/blocks.tsx'
 import { CheckIcon, CloseIcon } from '../components/icons.tsx'
 import { Img, Seo, WaButton } from '../components/ui.tsx'
@@ -37,6 +37,7 @@ export default function PackageDetail() {
   const { slug = '' } = useParams()
   const pkg = getPackage(slug)
   if (!pkg) return <NotFound />
+  if (pkg.slug !== slug) return <Navigate to={`/paket-umrah/${pkg.slug}`} replace />
 
   const message = packageWaMessage(pkg.name)
   const facts: [string, string | undefined][] = [

@@ -5,6 +5,7 @@ import { dirname } from 'node:path'
 import { defineConfig, type Plugin } from 'vite'
 import { pageMeta } from './src/config/pages.ts'
 import { site } from './src/config/site.ts'
+import { packageSlug } from './src/lib/format.ts'
 
 type Route = { loc: string; title: string; description: string; image?: string; lastmod?: string }
 
@@ -20,7 +21,7 @@ function routes(): Route[] {
   const artikel = jsonFiles('src/content/artikel').filter((a) => !a.data.draft)
   return [
     ...Object.entries(pageMeta).map(([loc, m]) => ({ loc, ...m })),
-    ...paket.map((p) => ({ loc: `/paket-umrah/${p.slug}`, title: p.data.name || 'Paket', description: p.data.summary || '', image: p.data.images?.[0] })),
+    ...paket.map((p) => ({ loc: `/paket-umrah/${packageSlug(p.slug, p.data.departureDate || undefined)}`, title: p.data.name || 'Paket', description: p.data.summary || '', image: p.data.images?.[0] })),
     ...artikel.map((a) => ({ loc: `/artikel/${a.slug}`, title: a.data.title, description: a.data.excerpt, image: a.data.thumbnail, lastmod: a.data.date })),
   ]
 }

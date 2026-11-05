@@ -23,6 +23,7 @@ export interface RoomOption {
 
 export interface UmrahPackage {
   slug: string
+  fileSlug?: string // nama file JSON; alamat lama sebelum tanggal diubah
   name: string
   summary: string
   category: 'Umroh' | 'Umroh Plus' | 'Ziarah & Wisata Halal' | 'Haji'

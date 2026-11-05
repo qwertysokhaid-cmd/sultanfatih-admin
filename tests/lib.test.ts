@@ -74,3 +74,12 @@ test('markdown blocks and inline', () => {
   // javascript: links are not turned into links
   assert.deepEqual(parseInline('[x](javascript:alert(1))'), [{ text: '[x](javascript:alert(1))' }])
 })
+
+import { packageSlug } from '../src/lib/format.ts'
+
+test('packageSlug follows the departure date', () => {
+  assert.equal(packageSlug('umroh-super-promo-plus-thaif-19-nov-2026', '2026-11-20'), 'umroh-super-promo-plus-thaif-20-nov-2026')
+  assert.equal(packageSlug('umroh-plus-aqsa-02-jan-2027', '2027-01-02'), 'umroh-plus-aqsa-02-jan-2027')
+  assert.equal(packageSlug('paket-baru-2027-03-05', '2027-03-05'), 'paket-baru-05-mar-2027')
+  assert.equal(packageSlug('haji-plus-furoda', undefined), 'haji-plus-furoda')
+})
