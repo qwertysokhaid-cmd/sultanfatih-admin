@@ -35,6 +35,7 @@ export interface UmrahPackage {
   price?: number // harga per orang (IDR)
   roomOptions?: RoomOption[]
   images: string[]
+  itineraryPdf?: string // PDF yang diunggah tim lewat /admin
   itinerary: ItineraryDay[]
   hotels: Hotel[]
   includes: string[]

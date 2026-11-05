@@ -80,7 +80,12 @@ export default function PackageDetail() {
             )}
 
             <Block title="Itinerary">
-              {pkg.itinerary.length ? (
+              {pkg.itineraryPdf ? (
+                <div className="flex flex-wrap gap-3">
+                  <a href={pkg.itineraryPdf} target="_blank" rel="noopener" className="btn-primary">Lihat Itinerary (PDF)</a>
+                  <a href={pkg.itineraryPdf} download className="btn-outline">Unduh PDF</a>
+                </div>
+              ) : pkg.itinerary.length ? (
                 <ol className="relative space-y-6 border-l-2 border-lavender pl-6">
                   {pkg.itinerary.map((d) => (
                     <li key={d.day} className="relative">

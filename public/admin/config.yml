@@ -104,6 +104,14 @@ collections:
         widget: list
         required: false
         field: { name: item, label: Item, widget: string }
+      - name: itineraryPdf
+        label: File itinerary (PDF)
+        widget: file
+        required: false
+        media_folder: /public/files/itinerary
+        public_folder: /files/itinerary
+        accept: application/pdf
+        hint: "Unggah PDF itinerary (maks 25 MB). Jamaah bisa membuka & mengunduhnya di halaman paket."
       - name: itinerary
         label: Jadwal harian (itinerary)
         label_singular: hari
